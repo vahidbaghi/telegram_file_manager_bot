@@ -1,5 +1,6 @@
 # Telegram File Manager Bot
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
 ## Introduction
 Telegram gives you unlimited storage for your files. But it is difficult to categorize and manage files. 
@@ -15,19 +16,6 @@ In order to save and retrieve files in a channel, first create a (private) chann
 ```
 CHANNEL_ID = -100 # Shows the channel ID
 ```
-
-| Commmand                           | Description                                                                                                                      |
-| -----------------------------------|--------------------------------------------------------------------------------------------------------------------------------- |
-| /start                             | Starts the bot and displays the main board  |
-| /mkdir "directory name"            | Creates a directory named <directory name> in the current directory |
-| /cd "directory name"               | Changes directory to <directory name>|
-| /rm [-r] "file name"               | Removes <filename> file in the current list. The -r option allows you to use regular expressions|
-| /rmdir [-r] "directory name"       | Removes <directory name> directory in the current list. The -r option allows you to use regular expressions|
-| /get [-r] "file nmae or file id"   | Gets a specified file by <file name> or <file id> from the current directory. The -r option allows you to use regular expressions|
-| /rnf "old name" "new name"         | Renames a specifed file <old name> to <new name>|
-| /rnd "old name" "new name"         | Renames a specifed directory <old name> to <new name>|
-
-
 ## Installation
 
 Clone the repository:
