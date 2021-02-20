@@ -16,16 +16,16 @@ In order to save and retrieve files in a channel, first create a (private) chann
 CHANNEL_ID = -100 # Shows the channel ID
 ```
 
-| Command                          | Description |
-| -------------                    | ------------- |
-| /start                           | Starts the bot |
-| //mkdir "directory_name"         | Creates directory "directory_name" in the current directory|
-| /cd "directory_name"             | Changes directory to "directory_name"|
-| /rm [-r] "file_name"             | Removes specified file "file_name" from the current directory. The -r option allows you to use regular expressions
-| /rmdir [-r] "directory_name"     | Removes specified directory "directory_name" from the current directory. The -r option allows you to use regular expressions|
-| /get [-r] "file_name or file_id" | Gets a specific file by "file_name" or "file_id" from the current directory. The -r option allows you to use regular expressions|
-| /rnf "old" "new"                 | Renames a specifed file "old" to "new"|
-| /rnd "old" "new"                 | Renames a specifed directory "old" to "new"|
+| Command                            | Description |
+|:---------------------------------- |:-------------|
+| /start                             | Starts the bot |
+| /mkdir `directory_name`            | Creates directory "directory_name" in the current directory|
+| /cd `directory_name`               | Changes directory to "directory_name"|
+| /rm [-r] `file_name` or `file_id`  | Removes specified file "file_name" of "file_id" from the current directory. The -r option allows you to use regular expressions
+| /rmdir [-r] `directory_name`       | Removes specified directory "directory_name" from the current directory. The -r option allows you to use regular expressions|
+| /get [-r] `file_name` or `file_id` | Gets a specific file by "file_name" or "file_id" from the current directory. The -r option allows you to use regular expressions|
+| /rnf `old` `new`                   | Renames a specifed file "old" to "new"|
+| /rnd `old` `new`                   | Renames a specifed directory "old" to "new"|
 ## Installation
 
 Clone the repository:
