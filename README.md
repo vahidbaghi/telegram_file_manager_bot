@@ -1,6 +1,6 @@
 # Telegram File Manager Bot
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
+![](https://komarev.com/ghpvc/?username=vahidbaghi&color=green&label=View+Count)
 ## Introduction
 Telegram gives you unlimited storage for your files. But it is difficult to categorize and manage files. 
 This Telegram bot lets you categorize your files in telegram. When you send a file to the bot, it stores it on a private telegram channel that you created and retrieves it when you need it.
