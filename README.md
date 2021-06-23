@@ -24,8 +24,11 @@ CHANNEL_ID = -100 # Shows the channel ID
 | /rm [-r] `file_name` or `file_id`  | Removes specified file "file_name" of "file_id" from the current directory. The -r option allows you to use regular expressions
 | /rmdir [-r] `directory_name`       | Removes specified directory "directory_name" from the current directory. The -r option allows you to use regular expressions|
 | /get [-r] `file_name` or `file_id` | Gets a specific file by "file_name" or "file_id" from the current directory. The -r option allows you to use regular expressions|
-| /rnf `old` `new`                   | Renames a specifed file "old" to "new"|
-| /rnd `old` `new`                   | Renames a specifed directory "old" to "new"|
+| /rnf `old`,`new`                   | Renames a specifed file "old" to "new". Also, "old" can be "file_id"|
+| /rnd `old`,`new`                   | Renames a specifed directory "old" to "new". Also, "old" can be "file_id"|
+
+
+
 ## Installation
 
 Clone the repository:

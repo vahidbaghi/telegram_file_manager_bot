@@ -77,7 +77,6 @@ def start(update: Update, context: CallbackContext) -> None:
     global board_id
     chat_id = update.message.chat_id
     clear_history(update, update.message.chat_id, update.message.message_id)
-    update.message.bot.send_message(chat_id=chat_id, text=create_board(), parse_mode=ParseMode.HTML, reply_markup=get_inline_keyboard()).message_id
     board_id = update.message.bot.send_message(chat_id=chat_id, text=create_board(), parse_mode=ParseMode.HTML, reply_markup=get_inline_keyboard()).message_id
 
 
@@ -261,8 +260,9 @@ def rename_file(update: Update, context: CallbackContext) -> None:
     global board_id
 
     chat_id = update.message.chat_id
-    old_name = update.message.text.split(' ')[1]
-    new_name = update.message.text.split(' ')[2]
+    recieved_params = update.message.text[5:]
+    old_name = recieved_params.split(",")[0]
+    new_name = recieved_params.split(",")[1]
     clear_history(update, update.message.chat_id, update.message.message_id)
 
     sql = "UPDATE info SET name = ? WHERE type = 'file' AND  (name = ? OR id = ?)"
