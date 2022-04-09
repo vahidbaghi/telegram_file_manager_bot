@@ -13,6 +13,7 @@ current_dir = MAIN_DIR_NAME
 data[current_dir] = []
 
 board_id = -1  # Initialized By sending the /start command
+BOT_TOKEN = 'TOKEN' # Bot Api token (@BotFather)
 CHANNEL_ID = -100  # Shows the channel ID (https://bit.ly/2NbJAHD)
 sent_messages_id = []  # Holds the ID of the messages sent by the bot
 
@@ -369,7 +370,7 @@ def Inline_buttons(update: Update, context: CallbackContext) -> None:
 def main():
     """Starts the bot"""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("TOKEN")
+    updater = Updater(BOT_TOKEN)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
